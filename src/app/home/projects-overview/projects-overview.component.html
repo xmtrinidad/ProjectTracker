@@ -1,14 +1,15 @@
 <div class="Toolbar">
   <h2>Overview</h2>
   <div ngbDropdown class="d-inline-block">
-    <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+    <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Most Recent - All</button>
     <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-      <button class="dropdown-item">Action - 1</button>
-      <button class="dropdown-item">Another Action</button>
-      <button class="dropdown-item">Something else is here</button>
+      <button class="dropdown-item">In Progress</button>
+      <button class="dropdown-item">Not Started</button>
+      <button class="dropdown-item">On Hold</button>
+      <button class="dropdown-item">Cancelled</button>
     </div>
   </div>
 </div>
 <div class="Projects">
-  <app-project-card *ngFor="let project of projects"></app-project-card>
+  <app-project-card *ngFor="let project of projects" [project]="project"></app-project-card>
 </div> 

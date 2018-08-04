@@ -2,7 +2,9 @@ import { Project } from './project.model';
 
 export const PROJECTS: Project[] = [
   {
+    id: 0,
     name: 'My Project 1',
+    status: 'Not started',
     tasks: [
       {
         taskName: 'Task 1',
@@ -22,7 +24,9 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
+    id: 1,
     name: 'My Project 2',
+    status: 'Not started',
     tasks: [
       {
         taskName: 'Project 2 - Task 1',
@@ -42,7 +46,9 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
+    id: 2,
     name: 'My Project 3',
+    status: 'Not started',
     tasks: [
       {
         taskName: 'Three - Task 1',

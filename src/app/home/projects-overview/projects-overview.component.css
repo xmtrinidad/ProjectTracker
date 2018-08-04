@@ -1,0 +1,18 @@
+.Projects {
+  margin-top: 20px;
+  display: grid;
+  grid-row-gap: 25px;
+}
+
+@media (min-width: 768px) {
+  .Projects {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 35px;
+  }
+}
+
+@media (min-width: 992px) {
+  .Projects {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

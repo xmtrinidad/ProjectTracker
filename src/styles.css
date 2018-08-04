@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+
+/** Toolbar styles for both home page components **/
+.Toolbar {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .Toolbar {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

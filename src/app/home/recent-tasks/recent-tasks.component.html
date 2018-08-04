@@ -1,3 +1,8 @@
-<p>
-  recent-tasks works!
-</p>
+<div class="Toolbar">
+  <h2>Recent Tasks</h2>
+  <p>From Project: <a href="#">SLO-Portal</a></p>
+</div>
+<div class="Tasks">
+  <app-task-card *ngFor="let task of recentTasks" [task]="task"></app-task-card>
+</div>
+

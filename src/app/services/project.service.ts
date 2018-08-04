@@ -7,6 +7,7 @@ import { Project } from '../models/project.model';
 })
 export class ProjectService {
   projects: Project[] = PROJECTS;
+  project: Project;
   constructor() { }
 
   /**
@@ -15,5 +16,22 @@ export class ProjectService {
    */
   getProjects() {
     return this.projects;
+  }
+
+  /**
+   * Set the most recent project the user
+   * was working on
+   */
+  setRecentProject() {
+    this.project = this.projects[0];
+  }
+
+  /**
+   * Get the most recent tasks from the most
+   * recent project
+   */
+  getRecentTasks() {
+    this.setRecentProject();
+    return this.project.tasks;
   }
 }

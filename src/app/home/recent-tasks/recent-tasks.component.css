@@ -1,0 +1,17 @@
+.Tasks {
+  display: grid;
+  grid-row-gap: 25px;
+}
+
+@media (min-width: 768px) {
+  .Tasks {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 35px;
+  }
+}
+
+@media (min-width: 992px) {
+  .Tasks {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
