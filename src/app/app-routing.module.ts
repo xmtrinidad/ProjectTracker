@@ -6,6 +6,7 @@ import { ProjectDetailComponent } from "./project-detail/project-detail.componen
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: 'project/:id', component: ProjectDetailComponent},
+  { path: 'project/:id/:taskId', component: ProjectDetailComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', redirectTo: '/home', pathMatch: 'full' }
 ];

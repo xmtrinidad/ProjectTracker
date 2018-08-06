@@ -1,6 +1,11 @@
 .Tasks {
   display: grid;
   grid-row-gap: 25px;
+  margin-top: 20px;
+}
+
+.Toolbar__project-name {
+  margin: 0;
 }
 
 @media (min-width: 768px) {

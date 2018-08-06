@@ -1,7 +1,7 @@
-<div class="Task">
+<a [routerLink]="['/project/', projectId, task.taskId]" class="Task">
   <div class="Task__checkbox"></div>
   <div class="Task__info">
     <h3 class="Task__info-title">{{task.taskName}}</h3>
     <p>{{task.taskDescription}}</p>
   </div>
-</div>
+</a>

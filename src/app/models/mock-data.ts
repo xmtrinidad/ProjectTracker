@@ -7,16 +7,19 @@ export const PROJECTS: Project[] = [
     status: 'Not started',
     tasks: [
       {
+        taskId: 0,
         taskName: 'Task 1',
         taskDescription: 'This is a description for task 1',
         taskCompleted: false
       },
       {
+        taskId: 1,
         taskName: 'Task 2',
         taskDescription: 'This is a description for task 2',
         taskCompleted: false
       },
       {
+        taskId: 2,
         taskName: 'Task 3',
         taskDescription: 'This is a description for task 3',
         taskCompleted: false
@@ -29,16 +32,19 @@ export const PROJECTS: Project[] = [
     status: 'Not started',
     tasks: [
       {
+        taskId: 0,
         taskName: 'Project 2 - Task 1',
         taskDescription: 'This is a description for task 1',
         taskCompleted: false
       },
       {
+        taskId: 1,
         taskName: 'Project 2 - Task 2',
         taskDescription: 'This is a description for task 2',
         taskCompleted: false
       },
       {
+        taskId: 2,
         taskName: 'Project 2 -Task 3',
         taskDescription: 'This is a description for task 3',
         taskCompleted: false
@@ -51,16 +57,19 @@ export const PROJECTS: Project[] = [
     status: 'Not started',
     tasks: [
       {
+        taskId: 0,
         taskName: 'Three - Task 1',
         taskDescription: 'This is a description for task 1',
         taskCompleted: false
       },
       {
+        taskId: 1,
         taskName: 'Three - Task 2',
         taskDescription: 'This is a description for task 2',
         taskCompleted: false
       },
       {
+        taskId: 2,
         taskName: 'Three - Task 3',
         taskDescription: 'This is a description for task 3',
         taskCompleted: false
