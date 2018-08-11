@@ -1,0 +1,13 @@
+.xrm {
+  padding: 15px 0;
+}
+
+.xrm__row {
+  display: grid;
+  grid-column-gap: 15px;
+}
+
+.xrm__row--two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

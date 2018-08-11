@@ -1,0 +1,28 @@
+.Project {
+  display: grid;
+  grid-row-gap: 15px;
+  grid-column-gap: 30px;
+}
+
+.Tasks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 420px;
+  overflow: auto;
+}
+
+app-task-card {
+  display: block;
+  margin: 5px 0;
+}
+
+.Tabs__buttons button {
+  margin-right: 5px;
+}
+
+@media (min-width: 992px) {
+  .Project {
+    grid-template-columns: 2fr 3fr;
+  }
+}

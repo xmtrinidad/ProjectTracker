@@ -12,6 +12,8 @@ import { RecentTasksComponent } from './home/recent-tasks/recent-tasks.component
 import { ProjectsOverviewComponent } from './home/projects-overview/projects-overview.component';
 import { TaskCardComponent } from './shared-components/task-card/task-card.component';
 import { ProjectCardComponent } from './home/projects-overview/project-card/project-card.component';
+import { XrmTabComponent } from './project-detail/xrm-tab/xrm-tab.component';
+import { NotesTabComponent } from './project-detail/notes-tab/notes-tab.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ProjectCardComponent } from './home/projects-overview/project-card/proj
     TaskCardComponent,
     HomeComponent,
     ProjectDetailComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    XrmTabComponent,
+    NotesTabComponent
   ],
   imports: [
     BrowserModule,
