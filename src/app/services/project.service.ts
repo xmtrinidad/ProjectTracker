@@ -4,6 +4,7 @@ import { PROJECTS } from '../models/mock-data';
 import { Project } from '../models/project.model';
 
 import { switchMap } from 'rxjs/operators';
+import { Xrm } from '../models/xrm.model';
 
 @Injectable({
   providedIn: 'root'
@@ -11,6 +12,7 @@ import { switchMap } from 'rxjs/operators';
 export class ProjectService {
   projects: Project[] = PROJECTS;
   project: Project;
+  xrm: Xrm;
   constructor(private route: ActivatedRoute) { }
 
   /**
@@ -33,6 +35,10 @@ export class ProjectService {
     this.project = selectedProject;
     
     return selectedProject;
+  }
+
+  getTaskXrm(selectedTaskId: number) {
+    return this.project.tasks.find(task => task.taskId === selectedTaskId);
   }
 
   /**

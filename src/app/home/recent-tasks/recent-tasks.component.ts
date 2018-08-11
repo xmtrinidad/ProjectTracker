@@ -14,7 +14,6 @@ export class RecentTasksComponent implements OnInit {
 
   ngOnInit() {
     this.recentTasks = this.projectService.getRecentTasks();
-    console.log(this.recentTasks);
   }
 
 }
