@@ -1,0 +1,22 @@
+.xrm {
+  padding: 15px 0;
+}
+
+.xrm__row {
+  display: grid;
+  grid-column-gap: 15px;
+}
+
+@media (min-width: 768px) {
+  .xrm__row--two-col {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .xrm__date-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+  }
+}

@@ -17,10 +17,6 @@ app-task-card {
   margin: 5px 0;
 }
 
-.Tabs__buttons button {
-  margin-right: 5px;
-}
-
 @media (min-width: 992px) {
   .Project {
     grid-template-columns: 2fr 3fr;
