@@ -6,4 +6,5 @@ export interface Task {
   taskDescription: string;
   taskCompleted: boolean;
   xrm: Xrm;
+  notes?: string;
 }

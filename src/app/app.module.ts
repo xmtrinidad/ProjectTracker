@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '../../node_modules/@angular/forms';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
+import { NgxMdModule } from 'ngx-md';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './shared-components/nav/nav.component';
@@ -36,7 +38,9 @@ import { XrmViewComponent } from './project-detail/xrm-tab/xrm-view/xrm-view.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule.forRoot()
+    FormsModule,
+    NgbModule.forRoot(),
+    NgxMdModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

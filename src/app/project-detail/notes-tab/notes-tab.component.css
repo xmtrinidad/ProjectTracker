@@ -1,0 +1,13 @@
+textarea, ngx-md {
+  min-height: 355px;
+}
+
+.notes__buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notes__buttons--left button {
+  margin-right: 10px;
+}

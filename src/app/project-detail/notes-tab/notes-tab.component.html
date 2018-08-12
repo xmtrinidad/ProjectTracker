@@ -1,3 +1,11 @@
-<p>
-  notes-tab works!
-</p>
+<textarea [(ngModel)]="mdNotes" class="form-control" *ngIf="wantsMarkdown"></textarea>
+<ngx-md [data]="mdNotes" *ngIf="!wantsMarkdown"></ngx-md>
+<div class="notes__buttons">
+  <div class="notes__buttons--left">
+    <button (click)="wantsMarkdown = false; onSaveClick()" class="btn btn-primary" *ngIf="wantsMarkdown">Save & View</button>
+    <button (click)="wantsMarkdown = true" class="btn btn-dark" *ngIf="!wantsMarkdown">Markdown</button>
+  </div>
+  <div class="notes__buttons--right">
+    <button class="btn btn-danger" *ngIf="wantsMarkdown" (click)="onClearClick()">Clear</button>
+  </div>
+</div>
