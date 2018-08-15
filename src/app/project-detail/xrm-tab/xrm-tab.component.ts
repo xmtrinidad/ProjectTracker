@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Xrm } from '../../models/xrm.model';
 import { ActivatedRoute } from '../../../../node_modules/@angular/router';
 import { ProjectService } from '../../services/project.service';
+import { NotesService } from '../../services/notes.service';
 
 @Component({
   selector: 'app-xrm-tab',
@@ -12,6 +13,7 @@ export class XrmTabComponent implements OnInit {
   xrm: Xrm;
   wantsToEdit = false;
   constructor(
+    private notesService: NotesService,
     private projectService: ProjectService, 
     private route: ActivatedRoute) { }
 
@@ -20,6 +22,7 @@ export class XrmTabComponent implements OnInit {
     this.route.url.subscribe(url =>{
       const selectedTaskId = +this.route.snapshot.paramMap.get('taskId');
       const task = this.projectService.getTaskXrm(selectedTaskId);
+      this.notesService.setCurrentNotes(task);
       this.xrm = task.xrm;
     });
   }

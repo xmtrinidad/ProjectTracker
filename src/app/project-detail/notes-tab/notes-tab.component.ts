@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { NotesService } from '../../services/notes.service';
+import { ActivatedRoute } from '../../../../node_modules/@angular/router';
 
 @Component({
   selector: 'app-notes-tab',
@@ -10,10 +11,15 @@ export class NotesTabComponent implements OnInit, OnDestroy {
   wantsMarkdown = true;
   mdNotes: string;
 
-  constructor(private notesService: NotesService) { }
+  constructor(
+    private route: ActivatedRoute,
+    private notesService: NotesService) { }
 
   ngOnInit() {
-    this.mdNotes = this.notesService.currentNote;
+    // Change current notes on route change
+    this.route.url.subscribe(url => {
+      this.mdNotes = this.notesService.getCurrentNotes();
+    });
   }
 
   onSaveClick() {

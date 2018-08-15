@@ -7,13 +7,13 @@
 
   <!-- Tabs -->
   <div class="Tabs">
-    <ngb-tabset>
-      <ngb-tab title="xRM">
+    <ngb-tabset #tabs>
+      <ngb-tab title="xRM" id="xrm">
         <ng-template ngbTabContent>
           <app-xrm-tab></app-xrm-tab>
         </ng-template>
       </ngb-tab>
-      <ngb-tab title="Notes">
+      <ngb-tab title="Notes" id="notes">
         <ng-template ngbTabContent>
           <app-notes-tab></app-notes-tab>
         </ng-template>
