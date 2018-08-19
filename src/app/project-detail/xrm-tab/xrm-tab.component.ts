@@ -33,6 +33,10 @@ export class XrmTabComponent implements OnInit {
     this.projectService.setCompletedTask(this.task);
   }
 
+  onStartTaskClick() {
+    this.projectService.setStartTask(this.task);
+  }
+
   onDeleteTaskClick() {
     console.log('Task delete button clicked.  Do some stuff');
   }

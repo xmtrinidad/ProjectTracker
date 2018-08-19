@@ -55,12 +55,24 @@ export class ProjectService {
   }
 
   setCompletedTask(theCompletedTask: Task) {
+    // Maybe refactor this
     const projectIndex = PROJECTS.indexOf(this.project);
     const taskIndex = this.project.tasks.indexOf(theCompletedTask);
+
     // Set front end
-    this.project.tasks[taskIndex].taskCompleted = true;
+    // this.project.tasks[taskIndex].taskCompleted = true;
+
     // Update back-end later
     PROJECTS[projectIndex].tasks[taskIndex].taskCompleted = true;
+    PROJECTS[projectIndex].tasks[taskIndex].xrm.actual.endDate = this.createDateString();
+  }
+
+  setStartTask(theCompletedTask: Task) {
+    // Maybe refactor this
+    const projectIndex = PROJECTS.indexOf(this.project);
+    const taskIndex = this.project.tasks.indexOf(theCompletedTask);
+
+    PROJECTS[projectIndex].tasks[taskIndex].xrm.actual.startDate = this.createDateString();
   }
 
   /**
@@ -70,5 +82,13 @@ export class ProjectService {
   getRecentTasks() {
     this.setRecentProject();
     return this.project.tasks;
+  }
+
+  createDateString() {
+    const todaysDate = new Date();
+    const year = todaysDate.getFullYear();
+    const month = ("0" + (todaysDate.getMonth() + 1)).slice(-2);
+    const day = ("0" + todaysDate.getDate()).slice(-2);
+    return `${month}/${day}/${year}`;
   }
 }
