@@ -26,7 +26,7 @@ export const PROJECTS: Project[] = [
             time: ''
           }
         },
-        notes: "# Task 1 - Project 1\n\nThis is just for testing\n\n```html\n<h1>I'm an HTML example for a test</h1>\n```\n\n* Cool story bro"
+        notes: "# Task 1 - Project 1\n\nThis is just for testing\n\n```html\n<h1>I'm an HTML example for a test</h1>\n```\n\n* Cool story bro",
       },
       {
         taskId: 1,
@@ -48,13 +48,13 @@ export const PROJECTS: Project[] = [
             time: ''
           }
         },
-        notes: "# Task 2 - Project 1\n\nAnother test for a task\n\n```css\ndisplay: grid;\ngrid-template-columns: 1fr 1fr\n```\n\n## Heading 2\n\n* Just a test\n  * with a subbullet"
+        notes: "# Task 2 - Project 1\n\nAnother test for a task\n\n```css\ndisplay: grid;\ngrid-template-columns: 1fr 1fr\n```\n\n## Heading 2\n\n* Just a test\n  * with a subbullet",
       },
       {
         taskId: 2,
         taskName: 'Task 3',
         taskDescription: 'This is a description for task 3',
-        taskCompleted: false,
+        taskCompleted: true,
         xrm: {
           description: 'Task 3 xrm description',
           taskType: 'HTML Coding Task',
@@ -70,7 +70,7 @@ export const PROJECTS: Project[] = [
             time: '5'
           }
         },
-        notes: "# Test 3 - Project 1\n\nStuff\n\n## Heading 2\n\n## Heading 3\n\n#### Heading 4"
+        notes: "# Test 3 - Project 1\n\nStuff\n\n## Heading 2\n\n## Heading 3\n\n#### Heading 4",
       }
     ]
   },
@@ -99,7 +99,7 @@ export const PROJECTS: Project[] = [
             time: ''
           }
         },
-        notes: "# Project 2 Task 1\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros nibh, maximus in tempor sed, cursus eu tortor. Aliquam lectus arcu, vulputate at augue nec, iaculis laoreet augue. Donec lobortis est at tellus mollis ultricies. Vivamus ultricies consectetur placerat. Aenean libero leo, consequat vel odio eget, pretium posuere elit. Nam id tempor enim. Nullam sed diam nec turpis luctus ultrices interdum id purus. Fusce quis lacinia tellus, quis tincidunt libero. \n\n"
+        notes: "# Project 2 Task 1\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros nibh, maximus in tempor sed, cursus eu tortor. Aliquam lectus arcu, vulputate at augue nec, iaculis laoreet augue. Donec lobortis est at tellus mollis ultricies. Vivamus ultricies consectetur placerat. Aenean libero leo, consequat vel odio eget, pretium posuere elit. Nam id tempor enim. Nullam sed diam nec turpis luctus ultrices interdum id purus. Fusce quis lacinia tellus, quis tincidunt libero. \n\n",
       },
       {
         taskId: 1,
@@ -121,7 +121,7 @@ export const PROJECTS: Project[] = [
             time: ''
           }
         },
-        notes: "# Project 2 Task 2\n\nAenean sed venenatis dolor. Proin vitae massa pellentesque magna finibus sollicitudin quis a mauris. Mauris porttitor imperdiet rhoncus. Sed leo nibh, luctus nec tellus nec\n\n## Heading 2\n\nlobortis elementum ex. Pellentesque ornare mi sed gravida egestas. Aliquam nec nisi in dui laoreet pretium. Morbi luctus est sed lacus tempus, eget blandit sapien eleifend. Quisque et lectus orci. \n\n"
+        notes: "# Project 2 Task 2\n\nAenean sed venenatis dolor. Proin vitae massa pellentesque magna finibus sollicitudin quis a mauris. Mauris porttitor imperdiet rhoncus. Sed leo nibh, luctus nec tellus nec\n\n## Heading 2\n\nlobortis elementum ex. Pellentesque ornare mi sed gravida egestas. Aliquam nec nisi in dui laoreet pretium. Morbi luctus est sed lacus tempus, eget blandit sapien eleifend. Quisque et lectus orci. \n\n",
       },
       {
         taskId: 2,
@@ -143,7 +143,7 @@ export const PROJECTS: Project[] = [
             time: ''
           }
         },
-        notes: "# Project 2 Task 3\n\nAenean sed venenatis dolor. Proin vitae massa pellentesque magna finibus sollicitudin quis a mauris. Mauris porttitor imperdiet rhoncus. Sed leo nibh, luctus nec tellus nec\n\n## Heading 2\n\nlobortis elementum ex. Pellentesque ornare mi sed gravida egestas. Aliquam nec nisi in dui laoreet pretium. Morbi luctus est sed lacus tempus, eget blandit sapien eleifend. Quisque et lectus orci. \n\n### Heading 3\n\nIn hac habitasse platea dictumst. Ut sapien leo, finibus in placerat id, scelerisque at ligula. Sed risus ligula, congue et placerat eget, consectetur id diam. Class aptent taciti sociosqu ad litora\n\n"
+        notes: "# Project 2 Task 3\n\nAenean sed venenatis dolor. Proin vitae massa pellentesque magna finibus sollicitudin quis a mauris. Mauris porttitor imperdiet rhoncus. Sed leo nibh, luctus nec tellus nec\n\n## Heading 2\n\nlobortis elementum ex. Pellentesque ornare mi sed gravida egestas. Aliquam nec nisi in dui laoreet pretium. Morbi luctus est sed lacus tempus, eget blandit sapien eleifend. Quisque et lectus orci. \n\n### Heading 3\n\nIn hac habitasse platea dictumst. Ut sapien leo, finibus in placerat id, scelerisque at ligula. Sed risus ligula, congue et placerat eget, consectetur id diam. Class aptent taciti sociosqu ad litora\n\n",
       }
     ]
   },
@@ -172,7 +172,7 @@ export const PROJECTS: Project[] = [
             time: ''
           }
         },
-        notes: "#### JavaScript\n```javascript\nconst y = 10\nlet u = 10;\n\nfunction add() {\n  return y + u;\n}\n```\n\n"
+        notes: "#### JavaScript\n```javascript\nconst y = 10\nlet u = 10;\n\nfunction add() {\n  return y + u;\n}\n```\n\n",
       },
       {
         taskId: 1,
@@ -194,7 +194,7 @@ export const PROJECTS: Project[] = [
             time: ''
           }
         },
-        notes: "# Notes Pending for task 2\n\n"
+        notes: "# Notes Pending for task 2\n\n",
       },
       {
         taskId: 2,
@@ -216,7 +216,7 @@ export const PROJECTS: Project[] = [
             time: ''
           }
         },
-        notes: "# Notes Pending for task 3\n\n"
+        notes: "# Notes Pending for task 3\n\n",
       }
     ]
   }

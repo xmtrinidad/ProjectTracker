@@ -1,10 +1,9 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '../../../node_modules/@angular/router';
+
 import { PROJECTS } from '../models/mock-data';
 import { Project } from '../models/project.model';
-
-import { switchMap } from 'rxjs/operators';
 import { Xrm } from '../models/xrm.model';
+import { Task } from '../models/task.model';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +12,10 @@ export class ProjectService {
   projects: Project[] = PROJECTS;
   project: Project;
   xrm: Xrm;
-  constructor(private route: ActivatedRoute) { }
+
+  constructor() { }
+
+  
 
   /**
    * Get all projects from mock-data.
@@ -37,7 +39,10 @@ export class ProjectService {
     return selectedProject;
   }
 
-  getTaskXrm(selectedTaskId: number) {
+  /**
+   * Get the selected task to display on project-detail
+   */
+  getTask(selectedTaskId: number) {
     return this.project.tasks.find(task => task.taskId === selectedTaskId);
   }
 
@@ -47,6 +52,15 @@ export class ProjectService {
    */
   setRecentProject() {
     this.project = this.projects[0];
+  }
+
+  setCompletedTask(theCompletedTask: Task) {
+    const projectIndex = PROJECTS.indexOf(this.project);
+    const taskIndex = this.project.tasks.indexOf(theCompletedTask);
+    // Set front end
+    this.project.tasks[taskIndex].taskCompleted = true;
+    // Update back-end later
+    PROJECTS[projectIndex].tasks[taskIndex].taskCompleted = true;
   }
 
   /**

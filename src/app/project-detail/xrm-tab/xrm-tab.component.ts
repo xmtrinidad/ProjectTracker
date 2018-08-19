@@ -3,6 +3,7 @@ import { Xrm } from '../../models/xrm.model';
 import { ActivatedRoute } from '../../../../node_modules/@angular/router';
 import { ProjectService } from '../../services/project.service';
 import { NotesService } from '../../services/notes.service';
+import { Task } from '../../models/task.model';
 
 @Component({
   selector: 'app-xrm-tab',
@@ -10,6 +11,7 @@ import { NotesService } from '../../services/notes.service';
   styleUrls: ['./xrm-tab.component.css']
 })
 export class XrmTabComponent implements OnInit {
+  task: Task;
   xrm: Xrm;
   wantsToEdit = false;
   constructor(
@@ -21,14 +23,14 @@ export class XrmTabComponent implements OnInit {
     // Listen for route changes
     this.route.url.subscribe(url =>{
       const selectedTaskId = +this.route.snapshot.paramMap.get('taskId');
-      const task = this.projectService.getTaskXrm(selectedTaskId);
-      this.notesService.setCurrentNotes(task);
-      this.xrm = task.xrm;
+      this.task = this.projectService.getTask(selectedTaskId);
+      this.notesService.setCurrentNotes(this.task);
+      this.xrm = this.task.xrm;
     });
   }
 
   onCompleteTaskClick() {
-    console.log('Task complete button clicked.  Do some stuff');
+    this.projectService.setCompletedTask(this.task);
   }
 
   onDeleteTaskClick() {
