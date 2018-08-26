@@ -7,6 +7,10 @@
   grid-column-gap: 15px;
 }
 
+.xrm__buttons button {
+  margin-right: 10px;
+}
+
 @media (min-width: 768px) {
   .xrm__row--two-col {
     grid-template-columns: 1fr 1fr;

@@ -1,12 +1,8 @@
 <app-xrm-view [xrm]="xrm" *ngIf="!wantsToEdit"></app-xrm-view>
-<app-xrm-edit [xrm]="xrm" *ngIf="wantsToEdit"></app-xrm-edit>
+<app-xrm-edit (editStatus)="wantsToEdit = $event" [xrm]="xrm" *ngIf="wantsToEdit"></app-xrm-edit>
 <div class="xrm__buttons" *ngIf="!wantsToEdit">
   <button *ngIf="xrm.actual.startDate !== ''" type="button" class="btn btn-primary" (click)="onCompleteTaskClick()">Complete Task</button>
   <button *ngIf="xrm.actual.startDate === ''" type="button" class="btn btn-primary" (click)="onStartTaskClick()">Start Task</button>
   <button type="button" class="btn btn-dark" (click)="wantsToEdit = true">Edit Task</button>
   <button type="button" class="btn btn-danger" (click)="onDeleteTaskClick()">Delete Task</button>
-</div>
-<div class="xrm__buttons" *ngIf="wantsToEdit">
-  <button type="button" class="btn btn-dark" (click)="onEditSaveClick()">Save</button>
-  <button type="button" class="btn btn-danger" (click)="wantsToEdit = false">Cancel</button>
 </div>

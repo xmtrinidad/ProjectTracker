@@ -41,9 +41,4 @@ export class XrmTabComponent implements OnInit {
     console.log('Task delete button clicked.  Do some stuff');
   }
 
-  onEditSaveClick() {
-    this.wantsToEdit = false;
-    console.log('Task eddit save button clicked. Do some stuff');
-  }
-
 }

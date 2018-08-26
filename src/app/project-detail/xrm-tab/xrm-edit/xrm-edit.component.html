@@ -1,4 +1,4 @@
-<form class="xrm xrm--edit">
+<form class="xrm xrm--edit" (submit)="onXrmEditSubmit()">
   <div class="form-group xrm__row">
     <label for="xrm_description"><h3>Description</h3></label>
     <textarea [value]="xrm.description" type="text" class="form-control" id="xrm_description"></textarea>
@@ -43,5 +43,9 @@
         <input class="form-control" type="number" [value]="xrm.actual.time" id="xrm_actual-time">
       </div>
     </div>
+  </div>
+  <div class="xrm__buttons">
+    <button type="submit" class="btn btn-dark">Save</button>
+    <button type="button" class="btn btn-danger" (click)="onXrmEditCancel()">Cancel</button>
   </div>
 </form>

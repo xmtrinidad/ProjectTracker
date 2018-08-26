@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Xrm } from '../../../models/xrm.model';
 
 @Component({
@@ -8,10 +8,11 @@ import { Xrm } from '../../../models/xrm.model';
 })
 export class XrmEditComponent implements OnInit {
   @Input() xrm: Xrm;
+  @Output() editStatus = new EventEmitter<boolean>();
   constructor() { }
 
   ngOnInit() {
-    
+    console.log(this.xrm);
   }
 
   /**
@@ -27,6 +28,18 @@ export class XrmEditComponent implements OnInit {
     }
     const dateSplit = theDate.split('/');
     return `${dateSplit[2]}-${dateSplit[0]}-${dateSplit[1]}`;
+  }
+
+  onXrmEditSubmit() {
+
+    // Do some update xrm stuff here
+
+    this.editStatus.emit(false);
+    console.log('form submitted');
+  }
+
+  onXrmEditCancel() {
+    this.editStatus.emit(false);
   }
 
 }
