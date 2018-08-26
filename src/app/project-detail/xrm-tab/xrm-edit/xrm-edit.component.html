@@ -18,25 +18,25 @@
     <div class="form-group xrm__date-inputs">
       <div class="form-group">
         <label for="xrm_projected-start"><h4>Projected Start:</h4></label>
-        <input class="form-control" type="date" [value]="xrm.projected.startDate" id="xrm_projected-start">
+        <input class="form-control" type="date" [value]="convertDate(xrm.projected.startDate)" id="xrm_projected-start">
       </div>
       <div class="form-group">
-        <label for="xrm_projected-end"><h4>Projected Start:</h4></label>
-        <input class="form-control" type="date" [value]="xrm.projected.endDate" id="xrm_projected-end">
+        <label for="xrm_projected-end"><h4>Projected End:</h4></label>
+        <input class="form-control" type="date" [value]="convertDate(xrm.projected.endDate)" id="xrm_projected-end">
       </div>
       <div class="form-group">
-        <label for="xrm_projected-time"><h4>Projected End:</h4></label>
+        <label for="xrm_projected-time"><h4>Projected Time:</h4></label>
         <input class="form-control" type="number" [value]="xrm.projected.time" id="xrm_projected-time">
       </div>
     </div>
     <div class="form-group xrm__date-inputs">
       <div class="form-group">
         <label for="xrm_actual-start"><h4>Actual Start:</h4></label>
-        <input class="form-control" type="date" [value]="xrm.actual.startDate" id="xrm_actual-start">
+        <input class="form-control" type="date" [value]="convertDate(xrm.actual.startDate)" id="xrm_actual-start">
       </div>
       <div class="form-group">
         <label for="xrm_actual-end"><h4>Actual End:</h4></label>
-        <input class="form-control" type="date" [value]="xrm.actual.endDate" id="xrm_actual-end">
+        <input class="form-control" type="date" [value]="convertDate(xrm.actual.endDate)" id="xrm_actual-end">
       </div>
       <div class="form-group">
         <label for="xrm_actual-time"><h4>Actual Time:</h4></label>

@@ -16,12 +16,12 @@ export const PROJECTS: Project[] = [
           taskType: 'JavaScript Coding Task',
           status: 'Not Started',
           projected: {
-            startDate: '8/11/2018',
-            endDate: '8/31/2018',
+            startDate: '08/11/2018',
+            endDate: '08/31/2018',
             time: '10'
           },
           actual: {
-            startDate: '8/12/2018',
+            startDate: '08/12/2018',
             endDate: '',
             time: ''
           }
@@ -38,12 +38,12 @@ export const PROJECTS: Project[] = [
           taskType: 'CSS Coding Task',
           status: 'In Progress',
           projected: {
-            startDate: '8/11/2018',
-            endDate: '8/12/2018',
+            startDate: '08/11/2018',
+            endDate: '08/12/2018',
             time: '3'
           },
           actual: {
-            startDate: '8/12/2018',
+            startDate: '08/12/2018',
             endDate: '',
             time: ''
           }
@@ -60,13 +60,13 @@ export const PROJECTS: Project[] = [
           taskType: 'HTML Coding Task',
           status: 'In Progress',
           projected: {
-            startDate: '8/10/2018',
-            endDate: '8/11/2018',
+            startDate: '08/10/2018',
+            endDate: '08/11/2018',
             time: '5'
           },
           actual: {
-            startDate: '8/10/2018',
-            endDate: '8/11/2018',
+            startDate: '08/10/2018',
+            endDate: '08/11/2018',
             time: '5'
           }
         },
@@ -111,8 +111,8 @@ export const PROJECTS: Project[] = [
           taskType: 'Testing Task',
           status: 'Not Started',
           projected: {
-            startDate: '8/11/2018',
-            endDate: '8/18/2018',
+            startDate: '08/11/2018',
+            endDate: '08/18/2018',
             time: '15'
           },
           actual: {
@@ -133,8 +133,8 @@ export const PROJECTS: Project[] = [
           taskType: 'JavaScript Coding Task',
           status: 'Not Started',
           projected: {
-            startDate: '8/16/2018',
-            endDate: '8/20/2018',
+            startDate: '08/16/2018',
+            endDate: '08/20/2018',
             time: '10'
           },
           actual: {
@@ -162,8 +162,8 @@ export const PROJECTS: Project[] = [
           taskType: 'HTML Coding Task',
           status: 'In Progress',
           projected: {
-            startDate: '8/10/2018',
-            endDate: '8/11/2018',
+            startDate: '08/10/2018',
+            endDate: '08/11/2018',
             time: '5'
           },
           actual: {
@@ -184,8 +184,8 @@ export const PROJECTS: Project[] = [
           taskType: 'CSS Coding Task',
           status: 'Not Started',
           projected: {
-            startDate: '8/15/2018',
-            endDate: '8/16/2018',
+            startDate: '08/15/2018',
+            endDate: '08/16/2018',
             time: '7'
           },
           actual: {
@@ -206,8 +206,8 @@ export const PROJECTS: Project[] = [
           taskType: 'Random Stuff Task',
           status: 'On Hold',
           projected: {
-            startDate: '8/20/2018',
-            endDate: '8/23/2018',
+            startDate: '08/20/2018',
+            endDate: '08/23/2018',
             time: '15'
           },
           actual: {
